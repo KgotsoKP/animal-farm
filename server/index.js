@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import Chance from 'chance';
 
 const app = express();
 
@@ -8,9 +9,6 @@ app.use(cors());
 app.use(express.json()); // For parsing Json
 
 // Make animals
-import Chance from 'chance';
-
-
 const chance = new Chance();
 
 const animals = [...Array(250).keys()].map(id => {

@@ -47,6 +47,7 @@ function App() {
   )
 }
 
+// eslint-disable-next-line react/prop-types
 function Animal({ type, age, name }) {
   return (
     <li>
